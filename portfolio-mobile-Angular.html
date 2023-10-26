@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Projet • Angular</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
+    <link rel="shortcut icon" href="assets/images/favicons/favicon.png" type="image/png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/demo/style-demo.css" />
+
+</head>
+
+<body class="bg-triangles">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__wrap">
+            <div class="circle-pulse">
+                <div class="circle-pulse__1"></div>
+                <div class="circle-pulse__2"></div>
+            </div>
+            <div class="preloader__progress"><span></span></div>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-line"></div>
+
+    <main class="main">
+        <div class="container gutter-top">
+            <div class="row sticky-parent">
+                <!-- Sidebar -->
+                <aside class="col-12 col-md-12 col-xl-3">
+                    <div class="sidebar box shadow pb-0 sticky-column">
+                        <svg class="avatar avatar--180" viewBox="0 0 188 188">
+                            <g class="avatar__box">
+                                <image xlink:href="assets/img/avatar-1.png" height="100%" width="100%" />
+                            </g>
+                        </svg>
+                        <div class="text-center">
+                            <h3 class="title title--h3 sidebar__user-name"><span class="weight--500">Laurent</span>
+                                Vandenbussche</h3>
+                            <div class="badge badge--light m-2">Chef de projet</div><br>
+                            <div class="badge badge--light m-2">Développeur Full Stack</div><br>
+                            <div class="badge badge--light m-2">Formateur</div>
+
+                            <!-- Social -->
+                            <div class="social">
+                                <!-- <a class="social__link" href="https://www.facebook.com/"><i
+                                        class="font-icon icon-facebook"></i></a>
+                                <a class="social__link" href="https://www.behance.com/"><i
+                                        class="font-icon icon-twitter"></i></a> -->
+                                <a class="social__link" href="https://www.linkedin.com/"><i
+                                        class="font-icon icon-linkedin2"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="sidebar__info box-inner box-inner--rounded">
+                            <ul class="contacts-block">
+                                <!-- <li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
+                                    title="Address">
+                                    <i class="font-icon icon-location"></i>Menton
+                                </li> -->
+                                <li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
+                                    title="E-mail">
+                                    <a href="mailto:lvdbpaca@gmail.com"><i
+                                            class="font-icon icon-envelope"></i>lvdbpaca@gmail.com</a>
+                                </li>
+                                <li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
+                                    title="Phone">
+                                    <a href="tel:0647439605"><i class="font-icon icon-phone"></i>06 47 43 96 05</a>
+                                </li>
+                                <!-- <li class="contacts-block__item" data-toggle="tooltip" data-placement="top"
+									title="Skype">
+									<a href="skype:skype-example"><i class="font-icon icon-skype"></i>???</a>
+								</li> -->
+                            </ul>
+
+                            <a class="btn"
+                                href="http://www.sobox.fr/cv-laurent-vandenbussche/assets/pdf/cv-laurent-vandenbussche.pdf"
+                                target="_BLANK"><i class="font-icon icon-download"></i> Télécharger le CV</a>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Content -->
+                <div class="col-12 col-md-12 col-xl-9">
+                    <div class="box shadow pb-0">
+                        <!-- Menu -->
+                        <div class="circle-menu">
+                            <div class="hamburger">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <div class="inner-menu js-menu">
+                            <ul class="nav">
+                                <li class="nav__item"><a class="active" href="index.html">A propos</a></li>
+                                <li class="nav__item"><a href="resume.html">Résumé</a></li>
+                                <li class="nav__item"><a href="portfolio.html">Portfolio</a></li>
+                                <!-- <li class="nav__item"><a class="active" href="blog.html">Blog</a></li> -->
+                                <!-- <li class="nav__item"><a href="contact.html">Contact</a></li> -->
+                            </ul>
+                        </div>
+
+                        <!-- Post -->
+                        <div class="pb-3">
+                            <header class="header-post">
+                                <br>
+                                <!-- <div class="header-post__date">Sep 15, 2019</div> -->
+                                <h1 class="title title--h1">Première application Angular : Pokedex</h1>
+
+                                <div class="header-post__image-wrap">
+                                    <ion-content>
+                                       <img src="/img/fullstack-angular-pokedex.jpg" alt="" srcset="">
+                                    </ion-content>
+                                </div>
+                            </header>
+                            <footer class="footer-post">
+                                <a class="footer-post__share"
+                                    href="https://github.com/vandenbussche06/ionic-netflix.git" target="_blank"><svg
+                                        xmlns="http://www.w3.org/2000/svg" height="1em"
+                                        viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                    </svg><span style="padding-left:5px"> Consulter le projet Github</span></a>
+                            </footer>
+
+                            <div class="caption-post">
+                                Nous allons plonger dans le monde du développement avec
+                                Ionic et relever un défi : créer un clone de l'application Netflix. Dans cet
+                                article, nous allons explorer les aspects techniques de la création de cette application
+                                avec Ionic, en mettant l'accent sur diverses fonctionnalités de conception et de CSS.
+                            </div>
+                            <div class="caption-post">
+                                <h3>Introduction</h3>
+                                <p>L'objectif de cet exercice est de permettre d'acquérir des connaissances
+                                    pratiques en matière de développement mobile, en me concentrant sur la mise en
+                                    œuvre de fonctionnalités clés telles que le thème sombre, le défilement horizontal,
+                                    la mise en page des détails du contenu et l'accès à un API pour extraire les
+                                    informations d'un film.</p>
+                            </div>
+
+                            <div class="caption-post">
+                                <h3 class="title title--h3">1. Thème sombre et personnalisation des couleurs</h3>
+                                <p>L'une des caractéristiques de l'application Netflix est son thème
+                                    sombre. Pour recréer ce thème dans notre application Ionic, nous devons suivre
+                                    quelques étapes clés. Nous pouvons commencer par créer une nouvelle application
+                                    Ionic avec le modèle Tabs, puis personnaliser les couleurs en utilisant le
+                                    générateur de couleurs Ionic. En ajoutant les couleurs officielles de Netflix,
+                                    telles que le rouge et le noir, nous pouvons définir un thème cohérent pour notre
+                                    application.
+                                </p>
+                            </div>
+
+                            <div class="caption-post">
+                                <h3 class="title title--h3">2. Création des onglets</h3>
+                                <p>Après avoir établi le thème sombre, nous passons à la création des onglets pour notre
+                                    application Ionic. En ajustant l'apparence et les noms des onglets, nous pouvons
+                                    reproduire l'expérience utilisateur de Netflix de manière cohérente.
+                                </p>
+                            </div>
+
+                            <div class="caption-post">
+                                <h3 class="title title--h3">3. Page d'accueil de l'application Netflix</h3>
+                                <p>La page d'accueil est l'une des parties les plus importantes de notre application.
+                                    Nous pouvons commencer par afficher le logo de Netflix dans le header, en ajoutant
+                                    un bouton de partage d'écran. Ensuite, nous affichons des films dans une boîte de
+                                    défilement horizontale pour créer une expérience immersive similaire à celle de
+                                    Netflix.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="caption-post">
+                            <h3 class="title title--h3">4. Création d'une page de détail sous forme de modal</h3>
+                            <p>Nous abordons ensuite la création d'une nouvelle page de détail pour les films. Nous
+                                créons cette page en tant que modal pour une expérience utilisateur fluide. Nous
+                                incluons des fonctionnalités telles que la fermeture de la modal et l'affichage de
+                                détails importants sur le film sélectionné.
+                            </p>
+                        </div>
+
+                        <div class="caption-post">
+                            <h3 class="title title--h3">5. Accès en mode API REST</h3>
+                            <p>L'API REST d'Open Movie Database (OMDb) est un outil pour récupérer des
+                                informations détaillées sur les films. En utilisant l'URL https://www.omdbapi.com/ avec
+                                les paramètres appropriés, vous pouvez obtenir des données telles que les détails du
+                                film, le casting, les critiques, les évaluations, les affiches, etc.</p>
+                            <p>Pour accéder à l'API, vous devez obtenir une clé d'API en vous inscrivant sur leur site.
+                                Une fois que vous avez votre clé, vous pouvez envoyer des requêtes à l'API pour
+                                récupérer les informations désirées au format JSON.</p>
+                            </p>
+                        </div>
+
+                        <br>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">© 2023 CV - Laurent Vandenbussche</footer>
+        </div>
+
+        </div>
+        </div>
+    </main>
+
+    <div class="back-to-top"></div>
+
+    <!-- SVG masks -->
+    <svg class="svg-defs">
+        <clipPath id="avatar-box">
+            <path
+                d="M1.85379 38.4859C2.9221 18.6653 18.6653 2.92275 38.4858 1.85453 56.0986.905299 77.2792 0 94 0c16.721 0 37.901.905299 55.514 1.85453 19.821 1.06822 35.564 16.81077 36.632 36.63137C187.095 56.0922 188 77.267 188 94c0 16.733-.905 37.908-1.854 55.514-1.068 19.821-16.811 35.563-36.632 36.631C131.901 187.095 110.721 188 94 188c-16.7208 0-37.9014-.905-55.5142-1.855-19.8205-1.068-35.5637-16.81-36.63201-36.631C.904831 131.908 0 110.733 0 94c0-16.733.904831-37.9078 1.85379-55.5141z" />
+        </clipPath>
+        <clipPath id="avatar-hexagon">
+            <path
+                d="M0 27.2891c0-4.6662 2.4889-8.976 6.52491-11.2986L31.308 1.72845c3.98-2.290382 8.8697-2.305446 12.8637-.03963l25.234 14.31558C73.4807 18.3162 76 22.6478 76 27.3426V56.684c0 4.6805-2.5041 9.0013-6.5597 11.3186L44.4317 82.2915c-3.9869 2.278-8.8765 2.278-12.8634 0L6.55974 68.0026C2.50414 65.6853 0 61.3645 0 56.684V27.2891z" />
+        </clipPath>
+    </svg>
+
+    <!-- JavaScripts -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/common.js"></script>
+
+    <script src="assets/demo/plugins-demo.js"></script>
+</body>
+
+</html>
